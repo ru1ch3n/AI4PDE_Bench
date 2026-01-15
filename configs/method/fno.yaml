@@ -1,0 +1,17 @@
+name: fno
+# checkpoint used for eval mode
+checkpoint_path: null
+
+# model hyperparameters (used depending on the PDE grid dimensionality)
+width: 64
+depth: 4
+
+# 1D
+modes: 16
+
+# 2D
+modes1: 16
+modes2: 16
+
+# 3D
+modes3: 8

@@ -1,0 +1,4 @@
+name: ns
+# You may need to change this to match the dataset folder name (e.g., ns, navier_stokes, navier-stokes)
+data_key: ns
+diffusionpde_config: configs/ns-inverse.yaml

@@ -1,0 +1,7 @@
+name: deeponet
+checkpoint_path: null
+
+latent_dim: 256
+branch_hidden: [512, 512]
+trunk_hidden: [256, 256]
+act: gelu

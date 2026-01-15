@@ -1,0 +1,5 @@
+name: darcy
+# folder key under DiffusionPDE datasets (override if your dataset uses a different folder name)
+data_key: darcy
+# default DiffusionPDE config to run (relative to third_party/DiffusionPDE)
+diffusionpde_config: configs/darcy-inverse.yaml

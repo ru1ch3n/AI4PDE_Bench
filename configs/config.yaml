@@ -1,0 +1,38 @@
+defaults:
+  - pde: darcy
+  - mask: m1_random
+  - method: fno
+  - _self_
+
+# train | eval
+mode: train
+
+seed: 0
+device: cpu
+
+data:
+  data_dir: ${hydra:runtime.cwd}/third_party/DiffusionPDE/data
+  # fraction of training instances used for validation
+  val_fraction: 0.1
+  # optionally cap dataset size for debugging
+  max_train_instances: null
+  max_test_instances: null
+
+train:
+  batch_size: 8
+  num_workers: 0
+  lr: 1e-3
+  weight_decay: 0.0
+  max_epochs: 50
+  input_include_mask: true
+  amp: false
+
+eval:
+  batch_size: 8
+  num_workers: 0
+
+hydra:
+  run:
+    dir: results/runs/${pde.name}/${method.name}/${mask.name}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: true

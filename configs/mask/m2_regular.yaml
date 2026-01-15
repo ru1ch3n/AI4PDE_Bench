@@ -1,0 +1,4 @@
+name: m2_regular
+obs_ratio: 0.1
+noise_std: 0.0
+seed: 0

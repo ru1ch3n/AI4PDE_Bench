@@ -1,0 +1,5 @@
+name: m1_random
+# fraction of observed entries in u
+obs_ratio: 0.1
+noise_std: 0.0
+seed: 0

@@ -1,0 +1,3 @@
+name: poisson
+data_key: poisson
+diffusionpde_config: configs/poisson-inverse.yaml

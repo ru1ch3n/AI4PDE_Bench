@@ -1,0 +1,16 @@
+name: pinn
+
+lr: 1e-3
+steps: 2000
+
+obs_weight: 1.0
+pde_weight: 1.0
+boundary_weight: 1.0
+
+# viscosity for Burgers / NS
+nu: 0.001
+
+hidden: [256, 256, 256]
+act: tanh
+
+max_test_instances: 10

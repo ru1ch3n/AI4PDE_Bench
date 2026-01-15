@@ -1,0 +1,7 @@
+name: diffusionpde
+
+diffusionpde_dir: ${hydra:runtime.cwd}/third_party/DiffusionPDE
+python: python3
+
+# default to the pde-specific config; override on CLI if needed
+config_path: ${pde.diffusionpde_config}

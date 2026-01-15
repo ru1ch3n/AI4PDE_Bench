@@ -1,0 +1,4 @@
+name: m3_block
+obs_ratio: 0.1
+noise_std: 0.0
+seed: 0

@@ -1,0 +1,4 @@
+name: burgers
+data_key: burgers
+# DiffusionPDE provides a dedicated config for time-interval recovery
+diffusionpde_config: configs/burgers.yaml
